@@ -45,7 +45,7 @@ function App() {
         <Trump scale={.5} position={[0,-1,-2]} rotation={[0,1.6,0]}/>
       </Canvas>
       <button className="bottom-button" onClick={moveCamera}>
-        Enter if you Dare
+        Join Us
       </button>
     </div>
   );

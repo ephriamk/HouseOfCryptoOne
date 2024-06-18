@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function House(props) {
   const { nodes, materials } = useGLTF('/FinalHouse.glb')
+
+  const telegram = useRef()
+
+  const handleClick = () => {
+    window.open('https://your-link.com', '_blank')
+  }
+
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -55,8 +62,8 @@ export function House(props) {
           position={[-1363.619, -936.655, 236.463]}
         />
       </group>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.188}>
-        <group position={[0, 3, 6]} scale={0.843}>
+      <group ref={telegram} rotation={[-Math.PI / 2, 0, 0]} scale={0.188} onClick={handleClick}>
+        <group position={[0, 1, -12]} scale={0.843}>
           <group position={[3.348, -8.053, 8.839]} rotation={[0, 0, -1.508]} scale={0.607}>
             <mesh
               castShadow
@@ -73,7 +80,7 @@ export function House(props) {
           </group>
         </group>
       </group>
-      <mesh
+      <mesh 
         castShadow
         receiveShadow
         geometry={nodes.Cube.geometry}

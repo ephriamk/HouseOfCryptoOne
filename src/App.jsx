@@ -113,7 +113,7 @@ function App() {
         </Suspense>
       </Canvas>
       <button className="bottom-button" onClick={moveCamera}>
-        Join Us
+        Focus, Please be Patient
       </button>
     </div>
   );

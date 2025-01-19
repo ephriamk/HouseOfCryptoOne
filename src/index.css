@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #00ff88;
+  --dark-bg: #000000;
+  --light-text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--dark-bg);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}

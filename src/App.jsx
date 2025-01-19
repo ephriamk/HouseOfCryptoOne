@@ -37,7 +37,7 @@ const IntroOverlay = ({ onLoadComplete }) => {
         <div className="crypto-loader">
           <div className="crypto-coin"></div>
         </div>
-        <h1 className="glitch" data-text="House of Solana">House of Solana</h1>
+        <h1 className="glitch" data-text="House of Solana">$WHouse of Solana</h1>
         <p className="typewriter">Welcome to the future of Solana...</p>
         <div className="loading-progress">
           <div 
